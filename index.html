@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aprendiendo</title>
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500&amp;family=Roboto:wght@300;400;700&amp;display=swap" rel="stylesheet">
+   
+</head>
+    <body id="homePage">
+    <!-- navbar-->
+     <header>
+       <nav class="navbar navbar-light bg-light navbar-expand-lg">
+         <div class="container">
+           <a href="index.html" class="navbar-brand">Aprendiendo</a>
+           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon">
+             </span>
+           </button>
+           <div id="navbar" class="navbar-collapse mb-2 mb-lg-0 collapse show">
+             <ul class=" navbar-nav   mb-2  mb-lg-0  me-auto ">
+               <li class="nav-item">
+                 <a href="#videos" class="nav-link">
+                   Videos
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a href="#carousel" class="nav-link">
+                   Fotos
+                 </a>
+               </li>
+               <li class="nav-item">
+                 <a href="#" class="nav-link">
+                   Contact
+                 </a>
+               </li>
+             </ul>
+             <form class=" mb-3 mb-lg-0  me-lg-2 ">
+               <div class="input-group">
+                 <input type="search" class="form-control" placeholder="Search text here" aria-label="Search products here">
+                 <button type="submit" class="btn btn-secondary">
+                   <i class="bi-search" title="search" aria-hidden="true">
+                   </i>
+                   <span class="sr-only d-none"> search
+                   </span>
+               </button>
+               </div>
+             </form>
+             <div class=" dropdown  d-inline-block  me-2 ">
+               <button type="button" class=" btn btn-secondary dropdown-toggle" id="currencyDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                 USD $
+               </button>
+               <div class="dropdown-menu" aria-labelledby="currencyDropdown">
+                    <button type="button" class="dropdown-item">
+                    EUR €
+                    </button>
+                    <button type="button" class="dropdown-item">
+                        GBP £
+                    </button>
+                </div>
+             </div>
+             <a href="#" class=" btn btn-secondary me-2">
+               <i class="bi-heart" aria-hidden="true">
+               </i>
+               <span class="s-reader d-none">
+               Add to favourites
+               </span>
+             </a>
+             <a href="#" class=" btn  btn-primary ">
+               <i class="bi-cart"></i>
+               (0)
+             </a>
+           </div>
+         </div>
+       </nav>
+     </header>
+    <!-- section hero -->
+     <section class="bg-light pb-5 pt-3 pt-lg-5 mb-5">
+       <div class="container">
+         <div class="row align-items-center">
+           <div class="col-lg-6 mb-3 mb-lg-0">
+             <img src="https://dummyimage.com/800x600/7dc4e4/fff" class="img-fluid" alt="dummy image">
+           </div>
+           <div class="col-lg-6">
+             <h1 class="display-1">Aprendiendo</h1>
+             <p lang="la" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices. Ut metus tortor, aliquet non rutrum ac, dapibus vehicula augue.</p>
+             <a href="#" class="btn btn-lg btn-primary me-2">Shop</a>
+             <a href="#" class="btn btn-lg btn-outline-primary">About</a>
+           </div>
+         </div>
+       </div>
+     </section>
+    <!-- section secondary products -->
+     <div class="container">
+       <section class="mb-5" >
+         <h2 class="text-center mb-4">Mis Videos</h2>
+        
+         <div class="row row-cols-1 row-cols-lg-2 gy-3 gy-md-4 g-lg-5" >
+           <div class="col" >
+             <div class="row align-items-center">
+               
+                <div class="col-sm-4 mb-3 mb-sm-0">
+                 <!--<img src="https://dummyimage.com/592x333/ed8796/181926" class="img-fluid" alt="dummy image"> -->
+                 
+                 <video  controls class="img-fluid" >
+                    <source src="video1.mp4" type="video/mp4">
+                    <!--<source src="mov_bbb.ogg" type="video/ogg"> -->
+                       Su Navegador no soporta HTML video.
+                 </video>
+                    
+                </div>
+                <div class="col-sm-8">
+                    <h3>Pintado con acuarelas</h3>
+                    <p lang="es" class="mb-0">Este dibujo esta realizado en acuarelas.</p>
+                </div> 
+             </div>
+
+           </div>
+           <div class="col">
+             <div class="row align-items-center">
+               <div class="col-sm-4 mb-3 mb-sm-0">
+                    <!--img src="https://dummyimage.com/592x333/f5a97f/181926" class="img-fluid" alt="dummy image"-->
+                    <video   controls class="img-fluid" >
+                        <source src="video3.mp4" type="video/mp4">
+                        <!--<source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="col-sm-8">
+                    <h3>Utilizando un poco de todo</h3>
+                    <p lang="es" class="mb-0">Lapices, marcadores y demas cosas</p>
+                </div>
+             </div>
+           </div>
+           <div class="col">
+             <div class="row align-items-center">
+               <div class="col-sm-4 mb-3 mb-sm-0">
+                    <!--img src="https://dummyimage.com/592x333/eed49f/181926" alt="dummy image" class="img-fluid"-->
+                    <video   controls class="img-fluid" >
+                            <source src="video2.mp4" type="video/mp4">
+                            <!--<source src="mov_bbb.ogg" type="video/ogg"> -->
+                            Your browser does not support HTML video.
+                    </video>
+                </div>
+                <div class="col-sm-8">
+                    <h3>En el Taller</h3>
+                    <p lang="la" class="mb-0">Enseñando técnicas.</p>
+                </div>
+
+              </div>
+           </div>
+           <div class="col">
+             <div class="row align-items-center">
+               <div class="col-sm-4 mb-3 mb-sm-0">
+                 <!--img src="https://dummyimage.com/592x333/8bd5ca/181926" alt="dummy image" class="img-fluid"-->
+                 <video  controls class="img-fluid" >
+                    <source src="video4.mp4" type="video/mp4">
+                    <!--<source src="mov_bbb.ogg" type="video/ogg"> -->
+                       Your browser does not support HTML video.
+                  </video>
+               </div>
+               <div class="col-sm-8">
+                 <h3>Disfrutando la ceramica</h3>
+                 <p lang="la" class="mb-0">Tecnica de pintura en ceramica.</p>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+    <!-- section carrousel -->
+       <section class="mb-5">
+         <h2 class="text-center mb-4">Collections</h2>
+         <p lang="la">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices. Ut metus tortor, aliquet non rutrum ac, dapibus vehicula augue. Etiam congue erat sem, vitae gravida nunc pretium vitae. Fusce sed ex tellus. Quisque auctor viverra feugiat. Nulla urna odio, porta ut tristique ut, consequat non dolor. Etiam varius maximus dolor, at consectetur lectus. Mauris rutrum aliquet tellus, sed convallis diam.</p>
+         <div id="#carousel" class="carousel slide pointer-event" data-bs-ride="carousel" >
+           <div class="carousel-indicators">
+             <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
+             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+             <button type="button" data-bs-target="#carousel" data-bs-slide-to="3" aria-label="Slide 4" class=""></button>
+           </div>
+           <!-- 
+             https://html-validate.org/rules/prefer-native-element.html
+           -->
+           <div   class="carousel-inner" role="select">
+             <div class="carousel-item active">
+               <a href="#">
+                 <img src="https://dummyimage.com/1600x900/ca9ee6/ffffff" alt="Collection #1" class="d-block img-fluid">
+                 <div class="carousel-caption">
+                   <h3>Collection #1</h3>
+                   <p lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </div>
+               </a>
+             </div>
+             <div class="carousel-item">
+               <a href="#">
+                 <img src="https://dummyimage.com/1600x900/ef9f76/ffffff" alt="Collection #2" class="d-block img-fluid">
+                 <div class="carousel-caption">
+                   <h3>Collection #2</h3>
+                   <p lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </div>
+               </a>
+             </div>
+             <div class="carousel-item">
+               <a href="#">
+                 <img src="https://dummyimage.com/1600x900/a6d189/ffffff" alt="Collection #3" class="d-block img-fluid">
+                 <div class="carousel-caption">
+                   <h3>Collection #3</h3>
+                   <p lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </div>
+               </a>
+             </div>
+             <div class="carousel-item">
+               <a href="#">
+                 <img src="https://dummyimage.com/1600x900/85c1dc/ffffff" alt="Collection #4" class="d-block img-fluid">
+                 <div class="carousel-caption">
+                   <h3>Collection #4</h3>
+                   <p lang="la">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                 </div>
+               </a>
+             </div>
+           </div>
+           <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Previous</span>
+           </button>
+           <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+             <span class="visually-hidden">Next</span>
+           </button>
+         </div>
+       </section>
+    <!-- section popular products -->
+       <section class="mb-5">
+         <h2 class="text-center mb-4">Popular Products</h2>
+         <div class="row g-3 justify-content-center">
+           <div class="col-md-6 col-xxl-4">
+             <div class="card h-100">
+               <div class="position-relative">
+                 <img src="https://dummyimage.com/1600x900/f2d5cf/ffffff" alt="Product image" class="card-img-top">
+                 <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div>
+               </div>
+               <div class="card-body position-relative">
+                 <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
+                 <div class="text-uppercase fw-bold text-muted mb-1">Aprendiendo</div>
+                 <p lang="la" class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.</p>
+                 <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
+                   <i class="bi-check-circle"></i>
+                   In stock
+                 </div>
+               </div>
+               <div class="card-footer">
+                 <div class="d-flex justify-content-between align-items-center">
+                   <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span></div>
+                   <div class="d-flex">
+                     <button type="button" class="btn btn-primary me-2 js-addToCart">
+                       <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                     </button>
+                     <div class="dropdown">
+                       <button type="button" class="btn btn-secondary" id="addToWishlistDropdown1" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                       <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown1">
+                         <h6 class="dropdown-header">Select wishlist</h6>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6 col-xxl-4">
+             <div class="card h-100">
+               <div class="position-relative">
+                 <img src="https://dummyimage.com/1600x900/f4b8e4/ffffff" alt="Product image" class="card-img-top">
+                 <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div>
+               </div>
+               <div class="card-body position-relative">
+                 <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
+                 <div class="text-uppercase fw-bold text-muted mb-1">Aprendiendo</div>
+                 <p lang="la" class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.</p>
+                 <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-warning">
+                   <i class="bi-check-circle"></i>
+                   Only few in stock
+                 </div>
+               </div>
+               <div class="card-footer">
+                 <div class="d-flex justify-content-between align-items-center">
+                   <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span></div>
+                   <div class="d-flex">
+                     <button type="button" class="btn btn-primary me-2 js-addToCart">
+                       <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                     </button>
+                     <div class="dropdown">
+                       <button type="button" class="btn btn-secondary" id="addToWishlistDropdown2" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                       <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown2">
+                         <h6 class="dropdown-header">Select wishlist</h6>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6 col-xxl-4">
+             <div class="card h-100">
+               <div class="position-relative">
+                 <img src="https://dummyimage.com/1600x900/5f9efb/ffffff" alt="Product image" class="card-img-top">
+                 <div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div>
+               </div>
+               <div class="card-body position-relative">
+                 <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
+                 <div class="text-uppercase fw-bold text-muted mb-1">Aprendiendo</div>
+                 <p class="mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.</p>
+                 <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-danger">
+                   <i class="bi-check-circle"></i>
+                   Out of stock
+                 </div>
+               </div>
+               <div class="card-footer">
+                 <div class="d-flex justify-content-between align-items-center">
+                   <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span></div>
+                   <div class="d-flex">
+                     <button type="button" class="btn btn-primary me-2 js-addToCart" disabled="">
+                       <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
+                     </button>
+                     <div class="dropdown">
+                       <button type="button" class="btn btn-secondary" id="addToWishlistDropdown3" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi-heart"></i><span class="visually-hidden">Add to wishlist</span></button>
+                       <div class="dropdown-menu" aria-labelledby="addToWishlistDropdown3">
+                         <h6 class="dropdown-header">Select wishlist</h6>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #1</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #2</button>
+                         <button type="button" class="dropdown-item js-addToWishlist">Wishlist #3</button>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+     </div>
+     <!-- newsletter -->
+     <section class="bg-dark py-5">
+       <div class="container">
+         <form class="text-white" id="newsletterForm" novalidate="">
+           <h2 class="text-center mb-4">Newsletter</h2>
+           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.</p>
+           <div class="row">
+             <div class="col-md-4">
+               <div class="mb-3">
+                 <label for="firstName" class="visually-hidden">First name:</label>
+                 <input type="text" class="form-control" placeholder="Firstname" id="firstName" required="">
+                 <p class="valid-feedback">Valid feedback text</p>
+                 <p class="invalid-feedback">Invalid feedback text</p>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="mb-3">
+                 <label for="lastName" class="visually-hidden">Last name:</label>
+                 <input type="text" class="form-control" placeholder="Lastname" id="lastName" required="">
+                 <p class="valid-feedback">Valid feedback text</p>
+                 <p class="invalid-feedback">Invalid feedback text</p>
+               </div>
+             </div>
+             <div class="col-md-4">
+               <div class="mb-3">
+                 <label for="email" class="visually-hidden">Your email:</label>
+                 <input type="email" class="form-control" placeholder="mail@example.com" id="email" required="">
+                 <p class="valid-feedback">Valid feedback text</p>
+                 <p class="invalid-feedback">Invalid feedback text</p>
+               </div>
+             </div>
+           </div>
+           <div class="form-check mb-3">
+             <input type="checkbox" class="form-check-input" id="terms" value="terms" required="">
+             <label class="form-check-label" for="terms">Lorem ipsum dolor sit amet, consectetur <a href="#" data-bs-toggle="modal" data-bs-target="#newsletterModal">adipiscing elit</a>.</label>
+           </div>
+           <button type="submit" class="btn btn-primary" id="newsletterButton">Subscribe</button>
+           <button type="reset" class="btn btn-danger">Reset</button>
+           <div class="collapse mt-3" id="newsletterConfirmation">
+             <div class="alert alert-success">
+               <h3 class="alert-heading h4">Subscribed!</h3>
+               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</p>
+             </div>
+           </div>
+         </form>
+       </div>
+     </section>
+     <!-- footer links -->
+     <footer class="bg-light">
+       <div class="container py-5">
+         <div class="row">
+           <div class="col-sm-6 col-lg-3">
+             <h6>Quick links</h6>
+             <ul class="list-unstyled">
+               <li><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">About</a></li>
+               <li><a href="#">Contact</a></li>
+               <li><a href="#">Wishlist</a></li>
+               <li><a href="#">Cart</a></li>
+             </ul>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+             <h6>Information</h6>
+             <ul class="list-unstyled">
+               <li><a href="#">Frequently Asked Questions</a></li>
+               <li><a href="#">Shipping</a></li>
+               <li><a href="#">Returns</a></li>
+               <li><a href="#">Terms of Service</a></li>
+               <li><a href="#">Privacy Policy</a></li>
+             </ul>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+             <h6>Follow us</h6>
+             <ul class="list-unstyled">
+               <li><i class="bi-facebook text-primary"></i> <a href="#">Facebook</a></li>
+               <li><i class="bi-instagram text-primary"></i> <a href="#">Instagram</a></li>
+               <li><i class="bi-twitter text-primary"></i> <a href="#">Twitter</a></li>
+               <li><i class="bi-youtube text-primary"></i> <a href="#">YouTube</a></li>
+               <li><i class="bi-linkedin text-primary"></i> <a href="#">LinkedIn</a></li>
+             </ul>
+           </div>
+           <div class="col-sm-6 col-lg-3">
+             <h6>Contact</h6>
+             <address>
+               <strong>Aprendiendo</strong><br>
+               Steet Name 123<br>
+               ZIP code and city<br>
+               <!-- 
+                     &nbsp;  = non-breakeable space
+                     &#8209; = non-breakeable "-"
+               -->
+               <i class="bi-telephone text-primary">
+               </i>
+               <a href="tel:+1234567890">(123)&nbsp;456‑7890</a>
+               <br>
+               <i class="bi-envelope text-primary"></i>
+               <a href="mailto:info@domain.com">info@aprendiendo.com</a>
+             </address>
+           </div>
+         </div>
+         <div class="text-center">© 2023 Aprendiendo. All rights reserved.</div>
+       </div>
+     </footer>
+     <script async="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+   
+ </body>
