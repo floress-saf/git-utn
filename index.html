@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aprendiendo</title>
+        <title>Tecno-FullStack</title>
         <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin="">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,36 +13,26 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <style>
-          .info{
-            font-size:medium;
-            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            color:#f0f8ff;
-            align-items:center;
-          }
-          .col1 {
-            background-color: #121111d0;
-          }
-         
-        </style>
+        <link rel="stylesheet"  tybe="" href="estilos.css">
 
 </head>
-    <body id="homePage">
-    <!-- navbar-->
+    <body id="homePage" >
+   
      <header>
        
-      <div class="container-fluid py-1"  >
-          <div class="row bg-dark">
-              <div class="col-lg-6 col1" >
-                <p class="info fst-italic text-center">Atencion al Cliente : 02324-420800</p>    
-              </div>
-              <div class="col-lg-6 col1">
-                <p class="info fst-italic text-center" > Nuestra Direccion : Calle 29 y 24 </p>    
-              </div>      
-          </div>
-        </div>
-          <nav class="navbar navbar-light bg-light navbar-expand-lg">
-            <div class="container  py-2">
+      <div class="container-fluid bg-dark py-1">
+            <div class="row bg-dark">
+                <div class="col-lg-6 col1" >
+                  <p class="info fst-italic text-center">Atencion al Cliente : 02324-420800</p>    
+                </div>
+                <div class="col-lg-6 col1">
+                  <p class="info fst-italic text-center" > Nuestra Direccion : Calle 29 y 24 </p>    
+                </div>      
+              </div>   
+      </div>
+
+      <nav class="navbar navbar-light bg-light navbar-expand-lg">
+            <div class="container bg-light py-3  border">
               
               <div class="modal fade" id="sesionuser">
                 <div class="modal-dialog">
@@ -102,7 +92,8 @@
                         </div>  
                     </div>  
                </div>
-              <a href="" class="navbar-brand"> Tecno-FullStack </a>
+              
+               <a href="" class="navbar-brand"> Tecno-FullStack </a>
               <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="true" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -110,7 +101,7 @@
                 <ul class=" navbar-nav   mb-2  mb-lg-0  me-auto ">
                   <li class="nav-item">
                     <a href="#Sugerencias" class="nav-link">
-                      Sugerencias
+                      Destacados
                     </a>
                   </li>
                   <li class="nav-item">
@@ -124,15 +115,17 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#contacto" class="nav-link">
                       Contacto
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#acerca" class="nav-link">
                       Nosotros
                     </a>
                   </li>  
+                       
+
                 </ul>
 
                 <form class=" mb-3 mb-lg-0  me-lg-2 ">
@@ -155,9 +148,9 @@
 
     <!-- section carrousel -->
     <section id="Promociones" class="mb-5">
-     
-        <div class="container  py-3">     
-          <h2>Promociones de la Semana</h2> 
+      <!--div class="container bg-light py-3  border"-->
+          
+          <!--h2>Promociones de la Semana</h2--> 
            <div  class="carousel slide pointer-event" data-bs-ride="carousel" id="carouselcontrol" >
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselcontrol" data-bs-slide-to="0" aria-label="Slide 1" class="active" aria-current="true"></button>
@@ -189,450 +182,259 @@
               </button>
               
             </div>
-        </div>      
+        <!--/div-->      
     </section>
-    <!-- section popular products -->
-    <section id="Sugerencias" class="mb-5">
-         
-      <div class="container">
-           <h2>Nuestras Sugerencias</h2>
-           <div class="tabs-to-dropdown">
-                <div class="nav-wrapper d-flex align-items-center justify-content-between">
-                  <ul class="nav nav-pills d-none d-md-flex" id="pills-tab" role="tablist">
-                    
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link active" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab" aria-controls="pills-company" aria-selected="true">Bluetooth Speakers</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-product-tab" data-toggle="pill" href="#pills-product" role="tab" aria-controls="pills-product" aria-selected="false">Headphones</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-news-tab" data-toggle="pill"    href="#pills-news" role="tab" aria-controls="pills-news" aria-selected="false">Home Theater</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Hi End</a>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <a class="nav-link" id="pills-empresa-tab" data-toggle="pill" href="#pills-empresa" role="tab" aria-controls="pills-empresa" aria-selected="false">Gamers</a>
-                    </li>
-                    </ul>
+    <!--Fin --- Categorias por Sergio 28-04-2023----><!-- section de Categorias -->
+    <section id="Categorias" class="mb-5" >
+       <div class="container bg-light py-3  border">  
+             <div class="row align-items-center">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">                 
+                  <img  src="fotos/promociones/categorias/bluetooth.webp" class="img-circle img-fluid" alt="dummy image"> 
+                  <a href="404.html" class="btn btn-lg btn-primary me-2 text-center" >Bluetooth</a>
                 </div>
-               
-              
-              <!-- Tab panes -->
-            <div class="tab-content" id="pills-tabContent">
-                  <!--div id="menu1" class="container tab-pane active"-->
-                    <div class="tab-pane fade show active" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
-                   
-                     <div class="row g-3 justify-content-between">
-                       
-                        <div class="col-md-6 col-xxl-4">
-                           
-                          <div class="card h-100">
-                                <div class="position-relative">
-                                      <img src="fotos/Bluetooth Speakers/foto1.webp" alt="Product image" class="card-img-top">
-                                      <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                                </div>
-                                <div class="card-body position-relative">
-                                    <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                    <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                      <i class="bi-check-circle"></i>
-                                      In stock
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                        </div>
-                                        <div class="d-flex">
-                                          <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                            <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                          </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                         </div>
-                         <div class="col-md-6 col-xxl-4">
-                          <div class="card h-100">
-                              <div class="position-relative">
-                                    <img src="fotos/Bluetooth Speakers/foto2.webp" alt="Product image" class="card-img-top">
-                                    <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                              </div>
-                              <div class="card-body position-relative">
-                                  <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                  <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                    <i class="bi-check-circle"></i>
-                                    In stock
-                                  </div>
-                              </div>
-                              <div class="card-footer">
-                                  <div class="d-flex justify-content-between align-items-center">
-                                      <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                      </div>
-                                      <div class="d-flex">
-                                        <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                          <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                        </button>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                       </div>
-                       <div class="col-md-6 col-xxl-4">
-                         <div class="card h-100">
-                            <div class="position-relative">
-                                  <img src="fotos/Bluetooth Speakers/foto3.webp" alt="Product image" class="card-img-top">
-                                  <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                            </div>
-                            <div class="card-body position-relative">
-                                <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                  <i class="bi-check-circle"></i>
-                                  In stock
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                    </div>
-                                    <div class="d-flex">
-                                      <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                        <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                      </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                          </div>
-                       </div>
-                       <div class="col-md-6 col-xxl-4">
-                        <div class="card h-100">
-                           <div class="position-relative">
-                                 <img src="fotos/Bluetooth Speakers/foto3.webp" alt="Product image" class="card-img-top">
-                                 <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                           </div>
-                           <div class="card-body position-relative">
-                               <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                               <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                 <i class="bi-check-circle"></i>
-                                 In stock
-                               </div>
-                           </div>
-                           <div class="card-footer">
-                               <div class="d-flex justify-content-between align-items-center">
-                                   <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                   </div>
-                                   <div class="d-flex">
-                                     <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                       <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                     </button>
-                                   </div>
-                               </div>
-                           </div>
-
-                         </div>
-                      </div> 
-                   </div>
-                </div>      
-                <div class="tab-pane fade" id="pills-product" role="tabpanel" aria-labelledby="pills-product-tab">
-                 
-                <!--div id="menu2" class="container tab-pane fade"-->
-                  <div class="row g-3 justify-content-center">
-                            
-                    <div class="col-md-6 col-xxl-4">
-                        <div class="card h-100">
-                            <div class="position-relative">
-                                  <img src="fotos/Headphones/foto4.webp" alt="Product image" class="card-img-top">
-                                  <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                            </div>
-                            <div class="card-body position-relative">
-                                <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                  <i class="bi-check-circle"></i>
-                                  In stock
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                    </div>
-                                    <div class="d-flex">
-                                      <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                        <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                      </button>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                     </div>
-                  </div>   
-                </div>  
-                <div class="tab-pane fade" id="pills-news" role="tabpanel" aria-labelledby="pills-news-tab">
-                     
-                <!--div id="menu3" class="container tab-pane fade"><br-->
-                  <div class="row g-3 justify-content-center">
-                            
-                      <div class="col-md-6 col-xxl-4">
-                          <div class="card h-100">
-                              <div class="position-relative">
-                                    <img src="fotos/Home Theater/foto7.webp" alt="Product image" class="card-img-top">
-                                    <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                              </div>
-                              <div class="card-body position-relative">
-                                  <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                  <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                    <i class="bi-check-circle"></i>
-                                    In stock
-                                  </div>
-                              </div>
-                              <div class="card-footer">
-                                  <div class="d-flex justify-content-between align-items-center">
-                                      <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                      </div>
-                                      <div class="d-flex">
-                                        <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                          <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                        </button>
-                                      </div>
-                                  </div>
-                              </div>
-
-                          </div>
-                      </div>
-                      <div class="col-md-6 col-xxl-4">
-                            <div class="card h-100">
-                                  <div class="position-relative">
-                                        <img src="fotos/Home Theater/foto8.webp" alt="Product image" class="card-img-top">
-                                        <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                                  </div>
-                                  <div class="card-body position-relative">
-                                      <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                      <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                        <i class="bi-check-circle"></i>
-                                        In stock
-                                      </div>
-                                  </div>
-                                  <div class="card-footer">
-                                      <div class="d-flex justify-content-between align-items-center">
-                                          <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                          </div>
-                                          <div class="d-flex">
-                                            <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                              <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                            </button>
-                                          </div>
-                                      </div>
-                                  </div>
-
-                            </div>
-                      </div>
-                        <div class="col-md-6 col-xxl-4">
-                              <div class="card h-100">
-                                  <div class="position-relative">
-                                        <img src="fotos/Home Theater/foto9.webp" alt="Product image" class="card-img-top">
-                                        <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                                  </div>
-                                  <div class="card-body position-relative">
-                                      <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                      <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                        <i class="bi-check-circle"></i>
-                                        In stock
-                                      </div>
-                                  </div>
-                                  <div class="card-footer">
-                                      <div class="d-flex justify-content-between align-items-center">
-                                          <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                          </div>
-                                          <div class="d-flex">
-                                            <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                              <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                            </button>
-                                          </div>
-                                      </div>
-                                  </div>
-                                </div>
-                        </div>
-                    <div>
-                 <div>     
-                <!--div id="activaitem" class="container tab-pane fade"><br-->
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
-                  
-                  <div class="row g-3 justify-content-center">
-                     <div class="col-md-6 col-xxl-4">
-                        <div class="card h-100">
-                            <div class="position-relative">
-                                  <img src="fotos/Hi-End/foto10.webp" alt="Product image" class="card-img-top">
-                                  <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                            </div>
-                            <div class="card-body position-relative">
-                                <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                  <i class="bi-check-circle"></i>
-                                  In stock
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                    </div>
-                                    <div class="d-flex">
-                                      <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                        <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                      </button>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <img  src="fotos/promociones/categorias/gamers.webp" class="img-circle img-fluid" alt="dummy image"> 
+                    <a href="404.html" class="btn btn-lg btn-primary me-2 text-center" >Gamers</a>
+                </div>
+                  <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">        
+                     <img  src="fotos/promociones/categorias/headphone.webp" class="img-circle img-fluid" alt="dummy image"> 
+                      <a href="404.html" class="btn btn-lg btn-primary me-2 text-center" >Head phone</a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                   <img  src="fotos/promociones/categorias/hometheater.webp" class="img-circle img-fluid" alt="dummy image"> 
+                  <a href="404.html" class="btn btn-lg btn-primary me-2 text-center" >Home theater</a>
+                </div>
+          </div>
+        </div>
+     </section>
     
+      <!--Sugencia de Productos por Sergio 28-04-2023----><!-- section de Sugerencias o Articulos-->
+    <section id="Sugerencias" class="mb-5">
+        <div class="container bg-light py-3  border">  
+        <h1 class="display-5 mb-3"><i class="bi bi-info-square-fill"></i> Productos Destacados</h2>
+          <div class="row gy-md-4 justify-content-between">
+                              
+            <div class="col-md-6 col-xxl-4">
+                <div class="card mx-3 mb-2" style="width: 300px" center>
+                        <img class="card-img-top img-fluid" src="fotos/Bluetooth Speakers/foto1.webp" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title"></h4>
+                            <p class="card-text"></p>
+                            <p class="card-text">$3000</p>
+                            <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
                         </div>
-                     </div>
-                    <div>       
-                 </div>
-                 <!--div id="menuitem" class="container tab-pane fade"><br-->
-                 <div class="tab-pane fade" id="pills-empresa" role="tabpanel" aria-labelledby="pills-empresa">
-                    
-                      <div class="row g-3 justify-content-center">
-                            
-                        <div class="col-md-6 col-xxl-4">
-                            <div class="card h-100">
-                                <div class="position-relative">
-                                      <img src="fotos/Gamers/fotos14.webp" alt="Product image" class="card-img-top">
-                                      <!--div class="badge bg-info position-absolute top-0 end-0 mt-2 me-2">Tag</div-->
-                                </div>
-                                <div class="card-body position-relative">
-                                    <h3 class="h4"><a href="#" class="stretched-link">Product Name</a></h3>
-                                    <div class="small position-absolute bottom-0 end-0 mb-2 me-3 text-success">
-                                      <i class="bi-check-circle"></i>
-                                      In stock
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="fs-3 fw-bold lh-1">$199 <span class="fs-6 text-decoration-line-through text-muted">($299)</span>
-                                        </div>
-                                        <div class="d-flex">
-                                          <button type="button" class="btn btn-primary me-2 js-addToCart">
-                                            <i class="bi-cart-plus"></i><span class="visually-hidden">Add to cart</span>
-                                          </button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                      </div>   
-                </div>    
-                
-           </div>         
+                </div>
+            </div>
+            <div class="col-md-6 col-xxl-4"> 
+                <div class="card mx-3 mb-2" style="width:300px">
+                    <img class="card-img-top img-fluid " src="fotos/Headphones/foto6.webp" alt="Card image">
+                    <div class="card-body "  >
+                        <h4 class="card-title center"></h4>
+                        <p class="card-text "></p>
+                        <p class="card-text " >$7000</p>
+                        <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-6 col-xxl-4"> 
+                <div class="card mx-3 mb-2" style="width:300px">
+                    <img class="card-img-top img-fluid" src="fotos/HomeTheater/foto8.webp" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title"></h4>
+                        <p class="card-text"></p>
+                        <p class="card-text">$10000</p>
+                        <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                    </div>
+                </div>
+            </div>    
+            <div class="col-md-6 col-xxl-4"> 
+              <div class="card mx-3 mb-2" style="width:300px">
+                  <img class="card-img-top img-fluid" src="fotos/Bluetooth Speakers/foto2.webp" alt="Card image">
+                  <div class="card-body">
+                      <h4 class="card-title"></h4>
+                      <p class="card-text"></p>
+                      <p class="card-text">$10000</p>
+                      <a href="404.html" class="btn btn-outline-primary">Agregar al Carrito</a>
+                  </div>
+              </div>
+          </div>    
+        </div>
+   </div>
+</section>
+  <!--Fin ---Sugencia de Productos por Sergio 28-04-2023---->
+  <!--Nosotros agregado por JON 28-04-2023---->
+  <section  id="acerca">
+      <div  class="container bg-light py-3  border">
+      
+          <h1 class="display-5 mb-3"><i class="bi bi-info-square-fill"></i> Acerca de nosotros</h2>
+          <h5>Somos alumnos, integrantes del grupo X. Esta es nuestra página.</p>
+          
+          <div class="row text-center">
+                <div class="col-md-6 col-lg-3 pt-2 mb-2">
+                  <div class="card">
+                    <div class="pt-2">
+                      <img src="fotos/avatar/sergio.jpg" class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                      <hr />
+                      <h4 class="mb-4">Sergio Flores</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pt-2 mb-2">
+                  <div class="card">
+                    <div class="pt-2">
+                      <img src="fotos/avatar/jon.jpg"  class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                      <hr />
+                      <h4 class="mb-4">Jon Ibarra</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pt-2 mb-2">
+                  <div class="card">
+                    <div class="pt-2">
+                      <img src="fotos/avatar/tobias.jpg"  class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                      <hr />
+                      <h4 class="mb-4">Tobías Ávila</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 pt-2 mb-2">
+                  <div class="card">
+                    <div class="pt-2">
+                      <img src="fotos/avatar/facundo.jpg" class="rounded-circle img-fluid" />
+                    </div>
+                    <div class="card-body">
+                      <hr />
+                      <h4 class="mb-4">Facundo Torrez</h4>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+            </div>
       </div>
     </section>
-    <!-- newsletter -->
-    <section class="bg-dark py-5">
-       <div class="container">
-         <form class="text-white" id="newsletterForm" novalidate="">
-           <h2 class="text-center mb-4">Newsletter</h2>
-           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis convallis velit quis sapien sollicitudin ultrices.</p>
-           <div class="row">
-             <div class="col-md-4">
-               <div class="mb-3">
-                 <label for="firstName" class="visually-hidden">First name:</label>
-                 <input type="text" class="form-control" placeholder="Firstname" id="firstName" required="">
-                 <p class="valid-feedback">Valid feedback text</p>
-                 <p class="invalid-feedback">Invalid feedback text</p>
-               </div>
-             </div>
-             <div class="col-md-4">
-               <div class="mb-3">
-                 <label for="lastName" class="visually-hidden">Last name:</label>
-                 <input type="text" class="form-control" placeholder="Lastname" id="lastName" required="">
-                 <p class="valid-feedback">Valid feedback text</p>
-                 <p class="invalid-feedback">Invalid feedback text</p>
-               </div>
-             </div>
-             <div class="col-md-4">
-               <div class="mb-3">
-                 <label for="email" class="visually-hidden">Your email:</label>
-                 <input type="email" class="form-control" placeholder="mail@example.com" id="email" required="">
-                 <p class="valid-feedback">Valid feedback text</p>
-                 <p class="invalid-feedback">Invalid feedback text</p>
-               </div>
-             </div>
-           </div>
-           <div class="form-check mb-3">
-             <input type="checkbox" class="form-check-input" id="terms" value="terms" required="">
-             <label class="form-check-label" for="terms">Lorem ipsum dolor sit amet, consectetur <a href="#" data-bs-toggle="modal" data-bs-target="#newsletterModal">adipiscing elit</a>.</label>
-           </div>
-           <button type="submit" class="btn btn-primary" id="newsletterButton">Subscribe</button>
-           <button type="reset" class="btn btn-danger">Reset</button>
-           <div class="collapse mt-3" id="newsletterConfirmation">
-             <div class="alert alert-success">
-               <h3 class="alert-heading h4">Subscribed!</h3>
-               <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis posuere consequat. Nulla fermentum sodales augue, vitae ornare eros ornare quis. Donec lectus est, congue eu risus quis, tempus sagittis nunc.</p>
-             </div>
-           </div>
-         </form>
-       </div>
-     </section>
-     <!-- footer links -->
-     <footer class="bg-light">
-       <div class="container py-5">
-         <div class="row">
-           <div class="col-sm-6 col-lg-3">
-             <h6>Quick links</h6>
-             <ul class="list-unstyled">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Shop</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
-               <li><a href="#">Wishlist</a></li>
-               <li><a href="#">Cart</a></li>
-             </ul>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-             <h6>Information</h6>
-             <ul class="list-unstyled">
-               <li><a href="#">Frequently Asked Questions</a></li>
-               <li><a href="#">Shipping</a></li>
-               <li><a href="#">Returns</a></li>
-               <li><a href="#">Terms of Service</a></li>
-               <li><a href="#">Privacy Policy</a></li>
-             </ul>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-             <h6>Follow us</h6>
-             <ul class="list-unstyled">
-               <li><i class="bi-facebook text-primary"></i> <a href="#">Facebook</a></li>
-               <li><i class="bi-instagram text-primary"></i> <a href="#">Instagram</a></li>
-               <li><i class="bi-twitter text-primary"></i> <a href="#">Twitter</a></li>
-               <li><i class="bi-youtube text-primary"></i> <a href="#">YouTube</a></li>
-               <li><i class="bi-linkedin text-primary"></i> <a href="#">LinkedIn</a></li>
-             </ul>
-           </div>
-           <div class="col-sm-6 col-lg-3">
-             <h6>Contact</h6>
-             <address>
-               <strong>Aprendiendo</strong><br>
-               Steet Name 123<br>
-               ZIP code and city<br>
-               <!-- 
-                     &nbsp;  = non-breakeable space
-                     &#8209; = non-breakeable "-"
-               -->
-               <i class="bi-telephone text-primary">
-               </i>
-               <a href="tel:+1234567890">(123)&nbsp;456‑7890</a>
-               <br>
-               <i class="bi-envelope text-primary"></i>
-               <a href="mailto:info@domain.com">info@aprendiendo.com</a>
-             </address>
-           </div>
-         </div>
-         <div class="text-center">© 2023 Aprendiendo. All rights reserved.</div>
-       </div>
-     </footer>
-     <script async="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--Fin Nosotros Agregado por JON 28-04-2023---->
    
- </body>
+    <!--Principio del contacto Agregado por JON 28-04-2023---->
+     <section id="contacto">
+      <div  class="container border py-3">   
+        <div class="row">
+                    <div class="col-lg-6">
+                      <div class="info-box mb-4">
+                        <i class="bi bi-pin-map-fill"></i>
+                        <h3>Nuestra dirección</h3>
+                        <p class="lead">Calle 29 N°575, Mercedes, Buenos Aires</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                      <div class="info-box mb-4">
+                        <i class="bi bi-envelope-fill"></i>
+                        <h3>Email</h3>
+                        <p class="lead">info@tecno-fullstack.com</p>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                      <div class="info-box  mb-4">
+                        <i class="bi bi-telephone-fill"></i>
+                        <h3>Llamanos</h3>
+                        <p class="lead">02324 - 420800</p>
+                      </div>
+                    </div>
+        </div>
+        <div class="row">
+              <div class="col-lg-6">
+                   <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1337.0546587437907!2d-59.43192128099833!3d-34.65147044517663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bc7373883bc5e9%3A0x24fc682729bb8d71!2sMunicipalidad%20de%20Mercedes!5e0!3m2!1ses!2sar!4v1682172654152!5m2!1ses!2sar" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+              </div>
+
+              <div class="col-lg-6">
+                    <form>
+                      <div class="row g-3">
+                        <div class="col-md-6 form-group">
+                          <input type="text" class="form-control" placeholder="Nombre" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                          <input type="number" class="form-control"  placeholder="Teléfono" required pattern="[0-9]">   
+                        </div>
+                      </div>
+                      <div class="form-group mt-3">
+                        <input type="email" class="form-control" placeholder="Email" required pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}">            
+                      </div>
+                      <div class="form-group mt-3 mb-3">
+                        <textarea class="form-control" rows="5" placeholder="Comentario" required></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-primary"></a>Enviar mensaje <i class="bi bi-send-fill"></i></button>
+                  </form>
+              </div>
+        </div>
+    </div>  
+  </section>
+<!--Fin contacto Agregado por JON 28-04-2023-->
+
+<!-- footer links -- Agregado por Tobias 28-04-2023-->
+     <footer class="bg-light py-3" >
+       
+          <div class="fote">
+            <div class="row">
+                  <div class="col-sm-6 col-lg-3">
+                    <h6>enlaces rapidos</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">hogar</a></li>
+                      <li><a href="#">tienda</a></li>
+                      <li><a href="#">acerca de</a></li>
+                      <li><a href="#">contacto</a></li>
+                      <li><a href="#">lista de deseos</a></li> 
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h6>Informacion</h6>
+                    <ul class="list-unstyled">
+                      <li><a href="#">preguntas frecuentes</a></li>
+                      <li><a href="#">sobre envios</a></li>
+                      <li><a href="#">devoluciones</a></li>
+                      <li><a href="#">terminos de servicio</a></li>
+                      <li><a href="#">politica de privacidad</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-sm-6 col-lg-3">
+                    <h6>contacto</h6>
+                    <address>
+                      <i class="bi-geo-alt text-primary"></i>
+                      nombre de calle<br>
+                      codigo postal y ciudad<br>
+                      <i class="bi-telephone text-primary"></i>
+                      <a href="tel:+1234567890">(123)&nbsp;456‑7890</a>
+                      <br>
+                      <i class="bi-envelope text-primary"></i>
+                      <a href="mailto:info@domain.com">info@aprendiendo.com</a>
+                    </address>
+                  </div>
+                  </div>
+                      <div>
+                        <ul class="icon">
+                          <img src="logo.ico" class="imag" alt="..." width="200" height="200">
+                          <li><i class="bi-whatsapp text-primary"></i></li>
+                          <li><i class="bi-facebook text-primary"></i></li>
+                          <li><i class="bi-instagram text-primary"></i></li>
+                          <li><i class="bi-twitter text-primary"></i></li>
+                          <li><i class="bi-youtube text-primary"></i></li>
+                          <li><i class="bi-github text-primary "></i></li>
+                        </ul>
+                      </div class="copyright">
+                      <div>
+                      <h6>Copyright © 2023 Tecno-fullstack. Todos los derechos reservados.</h6>
+                    </div>
+                  </div>
+             </div>
+        
+        </div>      
+    </footer>
+    <!-- Fin footer -- Agregado por Tobias 28-04-2023-->  
+     <script async="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
